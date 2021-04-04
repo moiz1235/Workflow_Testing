@@ -1,5 +1,6 @@
 import unittest
-import application1 as tasks
+from src import application1 as tasks
+
 
 class TestSuite(unittest.TestCase):
 
