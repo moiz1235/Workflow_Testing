@@ -19,8 +19,8 @@ import os
 class TestSuite(unittest.TestCase):
     def setUp(self):
         self.student1 = tasks.Student('John','21', 3.4)
-        if os.path.exists(os.getcwd()+'\hello.txt'):
-            os.remove(os.getcwd()+'\hello.txt')
+        if os.path.exists(os.getcwd()+r'\hello.txt'):
+            os.remove(os.getcwd()+r'\hello.txt')
 
     def test_graduation(self):
 
@@ -38,8 +38,8 @@ class TestSuite(unittest.TestCase):
 
     def tearDown(self):
         del self.student1
-        if os.path.exists(os.getcwd() + '\hello.txt'):
-            os.remove(os.getcwd() + '\hello.txt')
+        if os.path.exists(os.getcwd() + r'\hello.txt'):
+            os.remove(os.getcwd() + r'\hello.txt')
 
 if __name__ == '__main__':
     with open('log.txt', "w") as f:
