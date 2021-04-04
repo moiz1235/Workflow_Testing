@@ -9,12 +9,12 @@ Test Teardown: Delete all Objects used in test cases, close connections and remo
 
 '''
 import unittest
-# from src import application2 as tasks
+from src import application2 as tasks
 import os
-import sys
-sys.path.append('../src')
+# import sys
+# sys.path.append('../src')
 
-import src.application2 as tasks
+# import application2 as tasks
 
 class TestSuite(unittest.TestCase):
     def setUp(self):
