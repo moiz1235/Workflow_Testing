@@ -25,7 +25,7 @@ class TestSuite(unittest.TestCase):
     def test_graduation(self):
 
         with self.subTest(key="Graduation Test"):
-            expectedValue = "Congrats on your gradtion"
+            expectedValue = "Congrats on your graduation"
             actualValue = self.student1.graduate()
             self.assertEqual(expectedValue, actualValue, "Not matching strings")
 
