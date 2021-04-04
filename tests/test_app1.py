@@ -1,6 +1,9 @@
 import unittest
-from src import application1 as tasks
+# from src import application1 as tasks
+import sys
+sys.path.append('../src')
 
+import src.application1 as tasks
 
 class TestSuite(unittest.TestCase):
 
