@@ -1,3 +1,11 @@
+"""
+Announcements:
+
+    1. This week's lab (Lab 10) on Flask
+    2. Project Phase 1 demo - 14th April
+    3. Next week - Last week of code reviews
+"""
+
 import unittest
 from src import application1 as tasks
 
@@ -8,7 +16,6 @@ class TestSuite(unittest.TestCase):
         expectedValue = 125
         actualValue = tasks.getExponential(5,3)
         self.assertEqual(expectedValue, actualValue)
-
 
     def test_greaterThan(self):
 
