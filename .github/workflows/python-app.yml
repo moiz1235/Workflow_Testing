@@ -34,3 +34,6 @@ jobs:
     - name: Test with pytest
       run: |
         pytest
+    - name: Build coverage file
+      run: |
+        pytest --cache-clear --cov=src test/ > pytest-coverage.txt
