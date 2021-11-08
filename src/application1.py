@@ -1,6 +1,6 @@
 def getExponential(a, b):
     return (a ** b)
-
+    
 def testGreaterThan10(x):
     if x > 10 and x != 10:
         return True
