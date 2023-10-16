@@ -1,0 +1,30 @@
+============================= test session starts ==============================
+platform darwin -- Python 3.8.9, pytest-7.4.2, pluggy-1.3.0
+rootdir: /Users/mmoiz/Library/CloudStorage/OneDrive-purdue.edu/7_fall_2023/ECE 30864/Lecture 08/Workflow_Testing
+plugins: cov-4.1.0
+collected 5 items
+
+tests/test_app1.py ...                                                   [ 60%]
+tests/test_app2.py F.                                                    [100%]
+
+=================================== FAILURES ===================================
+__________________________ TestSuite.test_graduation ___________________________
+
+self = <tests.test_app2.TestSuite testMethod=test_graduation>
+
+    def test_graduation(self):
+    
+        with self.subTest(key="Graduation Test"):
+            expectedValue = "Congrats on your graduation"
+            actualValue = self.student1.graduate()
+>           self.assertEqual(expectedValue, actualValue, "Not matching strings")
+E           AssertionError: 'Congrats on your graduation' != 'Congrats on your gradtion'
+E           - Congrats on your graduation
+E           ?                      --
+E           + Congrats on your gradtion
+E            : Not matching strings
+
+tests/test_app2.py:26: AssertionError
+=========================== short test summary info ============================
+FAILED tests/test_app2.py::TestSuite::test_graduation - AssertionError: 'Cong...
+========================= 1 failed, 4 passed in 0.05s ==========================
